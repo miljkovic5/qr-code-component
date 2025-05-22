@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-slate-300: hsl(212, 45%, 89%);
+  --color-slate-500: hsl(216, 15%, 48%);
+  --color-slate-900: hsl(218, 44%, 22%);
+
+  --space-200: 1rem;
+  --space-300: 1.5rem;
+  --space-500: 2.5rem;
+
+  --font-size-h1: 1.375rem;
+  --font-size-h2: 0.9375rem;
+  --line-height-h1: 1.2;
+  --line-height-h2: 1.4;
+
+  --letter-spacing-h2: 0.2px;
+
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  --border-radius-small: 10px;
+  --border-radius-medium: 20px;
+
+  --content-width: 320px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-slate-300);
+  display: grid;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: var(--font-weight-regular);
+  min-height: 100vh;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+.card__content-title {
+  color: var(--color-slate-900);
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-h1);
+  margin-bottom: var(--space-200);
+}
+
+.card__content-subtitle {
+  color: var(--color-slate-500);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-h2);
+  line-height: var(--line-height-h2);
+}
+
+.container {
+  align-self: center;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-medium);
+  justify-self: center;
+  padding-block: var(--space-200) var(--space-500);
+  padding-inline: var(--space-200);
+  text-align: center;
+  width: var(--content-width);
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-300);
+  }
+
+  .card__image {
+    border-radius: var(--border-radius-small);
+  }
+}
