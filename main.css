@@ -54,7 +54,7 @@ h2 {
   font-size: var(--font-size-h1);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-h1);
-  margin-bottom: var(--space-200);
+  margin-block-end: var(--space-200);
 }
 
 .card__content-subtitle {
